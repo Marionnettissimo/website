@@ -1,0 +1,28 @@
+---
+layout: default
+title: Marionnettissimo - Actualités
+pill: 0
+---
+								<!-- Blog -->
+									<section>
+										<div class="row">
+											{% for post in site.posts limit:6 %}
+											<div class="6u 12u(mobile)">
+												<section class="box">
+													<a href="#" class="image featured"><img src="images/{{ post.image }}" alt="" /></a>
+													<header>
+														<h3>{{ post.titre }}</h3>
+														<p>{{ post.date | date: "%d %B %Y" }}</p>
+													</header>
+													{{ post.excerpt }}
+													<footer>
+														<ul class="actions">
+															<li><a href="{{ post.url }}" class="button icon fa-file-text">Lire plus</a></li>
+															<li><a href="{{ post.url }}#comments" class="button alt icon fa-comment">{{ post.comments }} commentaires</a></li>
+														</ul>
+													</footer>
+												</section>
+											</div>
+											{% endfor %}
+										</div>
+									</section>

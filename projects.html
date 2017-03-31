@@ -1,0 +1,65 @@
+---
+layout: default
+title: Marionnettissimo - Projets
+pill: 2
+---
+<section>
+  <header class="major">
+    <h2>Actions Culturelles</h2>
+  </header>
+  <div class="row">
+    {% for action in site.actions %}
+    <div class="4u 12u(mobile)">
+      <section class="box">
+        <a href="#" class="image featured"><img src="images/{{ action.image }}" alt="" /></a>
+        <header>
+          <h3>{{ action.titre }}</h3>
+        </header>
+        <p>{{ action.excerpt }}</p>
+        <footer>
+          <a href="{{ action.url }}" class="button alt">En savoir plus</a>
+        </footer>
+      </section>
+    </div>
+    {% endfor %}
+  </section>
+  <section>
+    <header class="major">
+      <h2>Culture Sourde, culture tout court</h2>
+    </header>
+    <div class="row">
+      {% for culture_sourde in site.culture_sourd %}
+      <div class="4u 12u(mobile)">
+        <section class="box">
+          <a href="#" class="image featured"><img src="images/{{ culture_sourde.image }}" alt="" /></a>
+          <header>
+            <h3>{{ culture_sourde.titre }}</h3>
+          </header>
+          <p>{{ culture_sourde.excerpt }}</p>
+          <footer>
+            <a href="{{ culture_sourde.url }}" class="button alt">En savoir plus</a>
+          </footer>
+        </section>
+      </div>
+      {% endfor %}
+    </section>
+    <section>
+      <header class="major">
+        <h2>Formations professionnelles</h2>
+      </header>
+      <div class="row">
+        {% for formation in site.formations %}
+        <div class="4u 12u(mobile)">
+          <section class="box">
+            <a href="#" class="image featured"><img src="images/{{ formation.image }}" alt="" /></a>
+            <header>
+              <h3>{{ formation.titre }}</h3>
+            </header>
+            <p>{{ formation.excerpt }}</p>
+            <footer>
+              <a href="{{ formation.url }}" class="button alt">En savoir plus</a>
+            </footer>
+          </section>
+        </div>
+        {% endfor %}
+      </section>

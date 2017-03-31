@@ -1,0 +1,33 @@
+
+// Misc.
+$misc: (
+z-index-base:	10000
+);
+
+// Duration.
+$duration: (
+navPanel: 0.5s
+);
+
+// Size.
+$size: (
+navPanel: 275px
+);
+
+// Font.
+$font: (
+);
+
+// Palette.
+$palette: (
+'text': #5d5d5d,
+'title': #252122,
+'primary': #E30817,
+'secondary': #353132,
+'background': #e9e9e9,
+'btn_text':#e9e9e9
+);
+
+@function color($key: 'primary') {
+  @return map-get($palette, $key);
+}

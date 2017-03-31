@@ -1,0 +1,25 @@
+---
+layout: default
+title: Projets - Actions Culturelles
+pill: 2
+---
+<section>
+  <header class="major">
+    <h2>Actions Culturelles</h2>
+  </header>
+  <div class="row">
+    {% for action in site.actions %}
+    <div class="4u 12u(mobile)">
+      <section class="box">
+        <a href="#" class="image featured"><img src="images/action.image" alt="" /></a>
+        <header>
+          <h3>{{ action.titre }}</h3>
+        </header>
+        <p>{{ action.excerpt }}</p>
+        <footer>
+          <a href="{{ action.url }}" class="button alt">En savoir plus</a>
+        </footer>
+      </section>
+    </div>
+    {% endfor %}
+  </section>

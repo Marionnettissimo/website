@@ -1,0 +1,29 @@
+---
+layout: default
+title: Marionnettissimo
+---
+<article class="box post">
+  {% if page.image %}
+  <div class="image featured"><img src="/images/{{page.image}}" alt="" /></div>
+  {% endif %}
+  <header>
+    <h2>{{page.title}}</h2>
+    {% if page.subtitle %}
+    <p>{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+  {{ content }}
+  {% if page.titre_du_premier-paragraphe %}
+  <section>
+    <header>
+      <h3>{{ page.titre_du_premier_paragraphe }}</h3>
+    </header>
+    <p>
+      {{ page.texte_du_premier_paragraphe }}
+    </p>
+    <p>
+
+    </p>
+  </section>
+  {% endif %}
+</article>

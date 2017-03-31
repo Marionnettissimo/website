@@ -1,0 +1,10 @@
+collections:
+  team:
+  former:
+  actions:
+    output: true
+  culture_sourde:
+  formations:
+sass:
+  sass_dir: assets/_sass
+  style: compressed
