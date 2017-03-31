@@ -11,7 +11,7 @@ pill: 2
     {% for action in site.actions %}
     <div class="4u 12u(mobile)">
       <section class="box">
-        <a href="#" class="image featured"><img src="images/{{ action.image }}" alt="" /></a>
+        <a href="#" class="image featured"><img src="{{ site.github.url }}/images/{{ action.image }}" alt="" /></a>
         <header>
           <h3>{{ action.titre }}</h3>
         </header>
@@ -31,7 +31,7 @@ pill: 2
       {% for culture_sourde in site.culture_sourd %}
       <div class="4u 12u(mobile)">
         <section class="box">
-          <a href="#" class="image featured"><img src="images/{{ culture_sourde.image }}" alt="" /></a>
+          <a href="#" class="image featured"><img src="{{ site.github.url }}/images/{{ culture_sourde.image }}" alt="" /></a>
           <header>
             <h3>{{ culture_sourde.titre }}</h3>
           </header>
@@ -51,7 +51,7 @@ pill: 2
         {% for formation in site.formations %}
         <div class="4u 12u(mobile)">
           <section class="box">
-            <a href="#" class="image featured"><img src="images/{{ formation.image }}" alt="" /></a>
+            <a href="#" class="image featured"><img src="{{ site.github.url }}:images/{{ formation.image }}" alt="" /></a>
             <header>
               <h3>{{ formation.titre }}</h3>
             </header>
